@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color: #fff;
+    background-color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0px auto;
+    max-width: 960px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul#menu-header {
+    display: flex;
+}
+
+ul#menu-header li {
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+#logo {
+    text-transform: uppercase;
+}
