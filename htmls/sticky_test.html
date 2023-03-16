@@ -10,20 +10,21 @@
 </head>
 
 <body>
-    <div class="header container">
-        <a href="" id="logo">Unitop</a>
-        <nav>
-            <ul id="menu-header">
-                <li>Trang chủ</li>
-                <li>Giới thiệu</li>
-                <li>Sản phẩm</li>
-                <li>Blog</li>
-                <li>Liên hệ</li>
-            </ul>
-        </nav>
-
-    </div>
-    <div class="banner container"></div>
+    <header class="header">
+        <div class="header-padding">
+            <a href="" id="logo">Unitop</a>
+            <nav>
+                <ul id="menu-header">
+                    <li>Trang chủ</li>
+                    <li>Giới thiệu</li>
+                    <li>Sản phẩm</li>
+                    <li>Blog</li>
+                    <li>Liên hệ</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="banner"></div>
     <div id="conten" class="container">
         <h1>Cố định menu trong html/css</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit est molestiae nihil quod fugiat tempora eveniet
@@ -96,6 +97,18 @@
             tenetur ratione
             explicabo? Est expedita suscipit placeat reprehenderit consequuntur!</p>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function(){
+                if($(this).scrollTop()){
+                    $('header').addClass('sticky')
+                } else {
+                    $('header').removeClass('sticky')
+                }
+            })
+        });
+    </script>
 </body>
 
 </html>
